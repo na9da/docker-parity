@@ -37,4 +37,4 @@ RUN git clone https://github.com/ethcore/parity && \
 RUN file /build/parity/target/release/parity
 
 EXPOSE 8080 8545 8180
-CMD ["/build/parity/target/release/parity" "--chain" "ropsten" "--tracing" "on" "--jsonrpc-interface" "0.0.0.0" "--jsonrpc-hosts" "all"]
+CMD ["/build/parity/target/release/parity", "--chain", "ropsten", "--tracing", "on", "--jsonrpc-interface", "0.0.0.0", "--jsonrpc-hosts", "all"]
